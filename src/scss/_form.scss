@@ -1,0 +1,51 @@
+.input {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        &.is--default {
+            border: 1px solid $c-primary;
+            outline: none;
+            padding: 25px 25px 25px 65px;
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            transition: .25s all ease;
+            color: #262626;
+            font-weight: 300;
+            font-size: 18px;
+            &:focus {
+                background: #F7F6F2;
+            }
+            &.is--sm {
+                padding: 15px 20px 15px 65px;
+            }
+        }
+    }
+    &.is--icon {
+        position: relative;
+        label {
+            display: inline-block;
+            position: absolute;
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            top: 50%;
+            margin-top: -15px;
+            left: 25px;
+            &::after {
+                width: 25px;
+                height: 25px;
+                content: '';
+                position: absolute;
+                background: $c-secondary;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: 0;
+                z-index: -1;
+                border-radius: 100%;
+            }
+        }
+    }
+}

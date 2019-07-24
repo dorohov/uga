@@ -1,0 +1,130 @@
+.container {
+    max-width: #{1320px + 60px};
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+
+.is--circle {
+    position: relative;
+    z-index: 10;
+    padding: 10px 10px 10px 0;
+    display: block;
+    &.is--secondary {
+        &::after {
+            background: $c-secondary;
+        }
+    }
+    &.is--primary {
+        &::after {
+            background: $c-primary;
+        }
+    }
+    &.is--icon {
+        padding: 10px;
+        &::after {
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: 3px;
+        }
+        &:hover {
+            &::after {
+                width: 33px;
+            }
+        }
+    }
+    &::after {
+        content: '';
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        border-radius: 100px;
+        z-index: -1;
+        transition: .25s all ease;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    color: #5A5A5A;
+    letter-spacing: 0.12em;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    vertical-align: middle;
+    span {
+        &.is--stroke {
+            position: absolute;
+            display: block;
+            border: 2px solid $c-secondary;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 5px;
+        }
+        &.is--label {
+            padding: 21px 36px;
+            display: block;
+            background: $c-secondary;
+            transition: transform .3s cubic-bezier(0.4, 0, 0.2, 1);
+            &::after {
+                content: attr(data-text);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                transform: translate3d(0, -100%, 0);
+                color: $c-secondary;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    &:hover {
+        span {
+            &.is--label {
+                transform: translate3d(0, 100%, 0);
+            }
+        }
+    }
+}
+
+.heading {
+    margin-bottom: 60px;
+    &__text {
+        color: #262626;
+        font-size: 64px;
+        line-height: 85.4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 13px;
+        span {
+            &.is--label {
+                padding: 16px 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<header class="navbar">
+    <div class="navbar__inner container">
+        <div class="navbar__phone">
+            <a href="@@phone_link" class="navbar__phone__inner is--circle is--secondary">
+                <div class="navbar__phone__icon">
+                    @@include('component.svg.html', {"name": "phone"})
+                </div>
+                <div class="navbar__phone__text">@@phone</div>
+            </a>
+        </div>
+        <div class="navbar__menu">
+            <div class="navbar__menu__block">
+                <ul>
+                    <li class="is--active"><a href="#">Продукция</a></li>
+                    <li><a href="#">Услуги</a></li>
+                </ul>
+            </div>
+            <div class="navbar__menu__logo">
+                <a href="@@pages.index">
+                    <img src="img/logo.png" alt="@@sitename">
+                </a>
+            </div>
+            <div class="navbar__menu__block">
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar__controls">
+            <div class="navbar__controls__cart">
+                <a href="@@pages.basket" class="is--circle is--secondary is--icon">
+                    @@include('component.svg.html', {"name": "basket"})
+                </a>
+            </div>
+            <div class="navbar__controls__search">
+                <form action="#" class="navbar__controls__search__inner">
+                    <div class="navbar__controls__search__icon">
+                        @@include('component.svg.html', {"name": "search"})
+                    </div>
+                    <div class="navbar__controls__search__field">
+                        <input type="text" placeholder="Поиск">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="navbar__mobile">
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+</header>
+<div class="navbar__mobile__container">
+    <div class="navbar__mobile__menu">
+        <ul>
+            <li class="is--active"><a href="#">Продукция</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Корзина</a></li>
+        </ul>
+    </div>
+    <div class="navbar__mobile__phone">
+        <a href="@@phone_link" class="navbar__phone__inner is--circle is--secondary">
+            <div class="navbar__phone__icon">
+                @@include('component.svg.html', {"name": "phone"})
+            </div>
+            <div class="navbar__phone__text">@@phone</div>
+        </a>
+    </div>
+    <form class="navbar__mobile__search">
+        <div class="input is--icon">
+            <input type="text" class="is--default is--sm" name="search" id="search" placeholder="Поиск">
+            <label for="search">
+                @@include('component.svg.html', {"name": "search"})
+            </label>
+        </div>
+    </form>
+</div>

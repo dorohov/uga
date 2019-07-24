@@ -1,0 +1,21 @@
+@@if(type == "link") {
+    <a href="@@url" class="btn is--@@style">
+}
+@@if(type == "button") {
+    <button class="btn is--@@style" type="button">
+}
+@@if(type == "submit") {
+    <button class="btn is--@@style" type="submit">
+}
+<span class="is--stroke"></span>
+<span class="is--label" data-text="@@text">@@text</span>
+@@if(type == "link") {
+    </a>
+}
+@@if(type == "button") {
+    </button>
+}
+
+@@if(type == "submit") {
+    </button>
+}

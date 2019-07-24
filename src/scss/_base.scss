@@ -1,0 +1,120 @@
+body {
+    font-family: 'HypatiaSansPro';
+    background: #F7F6F2;
+    color: #363636;
+    &.is--open-menu {
+        .navbar {
+            &__mobile {
+                &__container {
+                    transform: none;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &.is--filters {
+        .catalog-home__aside {
+            transform: none;
+        }
+    }
+    &.is--overlay {
+        #overlay {
+            display: block;
+        }
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+svg,
+img {
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #363636;
+    font-weight: 600;
+    line-height: 85.4%;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a {
+    transition: .25s all ease;
+    &:hover {
+        color: $c-primary !important;
+    }
+}
+
+.dropdown {
+    &-label {
+        user-select: none;
+    }
+    &.is--open {
+        .dropdown {
+            &-block {
+                visibility: visible;
+                opacity: 1;
+                transform: none;
+            }
+        }
+    }
+    &-block {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-20%);
+        transition: .25s all ease;
+    }
+}
+
+#overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(#000, .5);
+    cursor: pointer;
+    display: none;
+}

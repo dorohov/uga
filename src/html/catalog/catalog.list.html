@@ -1,0 +1,36 @@
+<div class="catalog__list">
+    <div class="catalog__list__inner container">
+        <div class="catalog__list__heading">
+            <div class="catalog__list__heading__left">
+                <div class="heading">
+                    <div class="heading__text">Продукция</div>
+                </div>
+            </div>
+            <div class="catalog__list__heading__right">
+                <div class="catalog__list__heading__sort dropdown">
+                    <div class="catalog__list__heading__sort__label dropdown-label">
+                        Сортировать
+                        @@include('../components/component.svg.html', {"name": "dropdown"})
+                    </div>
+                    <div class="catalog__list__heading__sort__list dropdown-block">
+                        <ul>
+                            <li><span data-sort="price">По цене</span></li>
+                            <li><span data-sort="new">По новизне</span></li>
+                            <li><span data-sort="popular">По популярности</span></li>
+                        </ul>
+                    </div>
+                </div>
+                @@if(full == 'true') {
+                    <div class="catalog__list__heading__all">
+                        <a href="@@pages.catalog">Посмотреть все виды</a>
+                    </div>
+                }
+                <div class="catalog__list__heading__mobile"></div>
+            </div>
+        </div>
+        <div class="catalog__list__wrap">
+            @@include('catalog.list.aside.html')
+            @@include('catalog.list.main.html')
+        </div>
+    </div>
+</div>
