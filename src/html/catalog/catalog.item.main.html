@@ -1,0 +1,38 @@
+<div class="item">
+    <div class="item__inner container">
+        <div class="item__top">
+            <div class="item__top__breadcrumbs">
+                @@include('../components/component.breadcrumbs.html', {
+                    "list": [
+                        {
+                            "title": "Главная",
+                            "url": "@@pages.index"
+                        },
+                        {
+                            "title": "Продукция",
+                            "url": "@@pages.catalog"
+                        }
+                    ],
+                    "current": "Травосмесь №1 (Дорожная)"
+                })
+            </div>
+            <div class="item__top__heading">
+                <div class="heading">
+                    <div class="heading__text">Травосмесь №1 <br> (Дорожная)</div>
+                </div>
+            </div>
+            <div class="item__top__wrap">
+                <div class="item__top__left">
+                    <div class="item__top__left__image">
+                        <img src="img/item.png" alt="Травосмесь №1 (Дорожная)">
+                    </div>
+                    <div class="item__top__left__text">
+                        *При заказе менее, чем 100 кг, цена <br> за 1 кг - 150
+                        @@include('../components/component.svg.html', {"name": "ruble_small"})
+                    </div>
+                </div>
+                <div class="item__top__right"></div>
+            </div>
+        </div>
+    </div>
+</div>

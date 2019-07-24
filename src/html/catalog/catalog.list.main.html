@@ -1,1 +1,39 @@
-<div class="catalog__list__main">main</div>
+<div class="catalog__list__main">
+    <div class="catalog__list__main__list">
+        @@include('catalog.card.html', {
+            "img": "catalog1.png",
+            "title": "Травосмесь №1 <span>(Дорожная)</span>",
+            "price": "150"
+        })
+        @@include('catalog.card.html', {
+            "img": "catalog2.png",
+            "title": "Травосмесь №2 <span>(для пастбищ и сенокосов)</span>",
+            "price": "200"
+        })
+        @@include('catalog.card.html', {
+            "img": "catalog3.png",
+            "title": "Травосмесь №3 <span>(для заготовки кормов)</span>",
+            "price": "143"
+        })
+        @@include('catalog.card.html', {
+            "img": "catalog4.png",
+            "title": "Травосмесь №4 <span>(для заготовки кормов)</span>",
+            "price": "155"
+        })
+        @@include('catalog.card.html', {
+            "img": "catalog5.png",
+            "title": "Травосмесь №5 <span>(для заготовки кормов)</span>",
+            "price": "175"
+        })
+        @@include('catalog.card.html', {
+            "img": "catalog6.png",
+            "title": "Травосмесь №6 <span>(для заготовки кормов)</span>",
+            "price": "160"
+        })
+    </div>
+    @@if(pagination == 'true') {
+        <div class="catalog__list__paginate">
+            @@include('../components/component.pagination.html')
+        </div>
+    }
+</div>

@@ -70,6 +70,9 @@
     outline: none;
     vertical-align: middle;
     span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &.is--stroke {
             position: absolute;
             display: block;
@@ -114,7 +117,124 @@
     &__text {
         color: #262626;
         font-size: 64px;
-        line-height: 85.4%;
+        line-height: 102.4%;
+    }
+    &__sub {
+        padding-top: 25px;
+        color: #262626;
+        font-weight: 300;
+        font-size: 18px;
+    }
+}
+
+.pagination {
+    &__inner {
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                a,
+                span {
+                    width: 51px;
+                    height: 51px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                }
+                a {
+                    color: #5A5A5A;
+                }
+                span {
+                    font-weight: bold;
+                    color: $c-primary;
+                }
+                &.is--btn {
+                    a {
+                        background: $c-primary;
+                        border-radius: 5px;
+                        transition: .25s all ease;
+                        svg {
+                            fill: #fff;
+                        }
+                        &:hover {
+                            background: $c-secondary;
+                        }
+                    }
+                    &.is--prev {
+                        a {
+                            svg {
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+                    &.is--next {
+                        a {
+                            svg {
+                                transform: rotate(-90deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.breadcrumbs {
+    margin-bottom: 60px;
+    ul {
+        display: flex;
+        li {
+            font-size: 14px;
+            padding-right: 5px;
+            color: #262626;
+            a { 
+                color: #ABABAB;
+                white-space: nowrap;
+                &::after {
+                    content: ' ... ';
+                    color: #A4A4A4 !important;
+                }
+                &:hover {
+                    color: $c-primary;
+                }
+            }
+        }
+    }
+}
+
+.checkbox {
+    display: inline-block;
+    input {
+        display: none;
+        &:checked + label {
+            span {
+                opacity: 1;
+                transform: none;
+                border-radius: 1px;
+            }
+        }
+    }
+    label {
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $c-primary;
+        cursor: pointer;
+        border-radius: 3px;
+        align-items: center;
+        justify-content: center;
+        span {
+            width: 12px;
+            height: 12px;
+            display: block;
+            background: $c-primary;
+            transition: .25s all ease;
+            transform: scale(0);
+            border-radius: 100%;
+            opacity: 0;
+        }
     }
 }
 
@@ -126,5 +246,30 @@
                 padding: 16px 16px;
             }
         }
+    }
+    .heading {
+        margin-bottom: 30px;
+        &__text {
+            font-size: 38px;
+        }
+        &__sub {
+            padding-top: 15px;
+        }
+    }
+    .pagination {
+        &__inner {
+            ul {
+                li {
+                    a,
+                    span {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+    .breadcrumbs {
+        display: none;
     }
 }

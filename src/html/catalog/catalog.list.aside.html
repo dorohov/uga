@@ -1,17 +1,26 @@
 <div class="catalog__list__aside">
-    <div class="catalog__list__aside__dropdown">
-        <div class="catalog__list__aside__dropdown__label">Травосмеси</div>
-        <div class="catalog__list__aside__dropdown__list">
-            <ul>
-                <li><a href="#">Фестулолиум сорт «Вик 90 РС 3»</a></li>
-                <li><a href="#">Фестулолиум сорт «Вик 90 ЭС»</a></li>
-                <li><a href="#">Люцерна</a></li>
-                <li><a href="#">Клевер ползучий белый</a></li>
-                <li><a href="#">Эспарцерт</a></li>
-                <li><a href="#">Лядвенец рогатый</a></li>
-                <li><a href="#">Козлятник</a></li>
-                <li><a href="#">Клевер луговой</a></li>
-            </ul>
+    <div class="catalog__list__aside__mobile">
+        <div class="catalog__list__heading__mobile">
+            <span>Закрыть</span>
+        </div>
+        <div class="catalog__list__heading__sort dropdown">
+            <div class="catalog__list__heading__sort__label dropdown-label">
+                Сортировать
+                @@include('../components/component.svg.html', {"name": "dropdown"})
+            </div>
+            <div class="catalog__list__heading__sort__list dropdown-block">
+                <ul>
+                    <li><span data-sort="price">По цене</span></li>
+                    <li><span data-sort="new">По новизне</span></li>
+                    <li><span data-sort="popular">По популярности</span></li>
+                </ul>
+            </div>
         </div>
     </div>
+    @@include('catalog.list.aside.dropdown.html', {"title": "Травосмеси"})
+    @@include('catalog.list.aside.dropdown.html', {"title": "Однолетние <br> и многолетние травы"})
+    @@include('catalog.list.aside.dropdown.html', {"title": "Кукуруза"})
+    @@include('catalog.list.aside.dropdown.html', {"title": "Зерновые и зернобобовые <br> культуры"})
+    @@include('catalog.list.aside.dropdown.html', {"title": "Отечественные <br> многолетние травы"})
+    @@include('catalog.list.aside.dropdown.html', {"title": "Газонные травы"})
 </div>

@@ -1,3 +1,42 @@
-<div class="footer"></div>
+<div class="footer">
+    <div class="footer__inner container">
+        <div class="footer__logo">
+            <a href="@@pages.index">
+                <img src="img/logo.png" alt="@@sitename">
+            </a>
+        </div>
+        <div class="footer__info">
+            <div class="footer__info__block">
+                <a href="@@phone_link" class="footer__info__block__inner is--circle is--secondary">
+                    <div class="footer__info__block__icon">
+                        @@include('../components/component.svg.html', {"name": "phone"})
+                    </div>
+                    <div class="footer__info__block__text">@@phone</div>
+                </a>
+            </div>
+            <div class="footer__info__block">
+                <a href="mailto:@@email" class="footer__info__block__inner is--circle is--secondary">
+                    <div class="footer__info__block__icon">
+                        @@include('../components/component.svg.html', {"name": "email"})
+                    </div>
+                    <div class="footer__info__block__text">@@email</div>
+                </a>
+            </div>
+            <div class="footer__info__block">
+                <a href="mailto:@@email2" class="footer__info__block__inner is--circle is--secondary">
+                    <div class="footer__info__block__icon">
+                        @@include('../components/component.svg.html', {"name": "email"})
+                    </div>
+                    <div class="footer__info__block__text">@@email2</div>
+                </a>
+            </div>
+        </div>
+        <div class="footer__dorohov">
+            <a href="https://dorohovdesign.ru/">
+                @@include('component.svg.html', {"name": "dorohov"})
+            </a>
+        </div>
+    </div>
+</div>
 <div id="overlay"></div>
 @@include('component.scripts.html')

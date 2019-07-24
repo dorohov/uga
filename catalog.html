@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная — Юга</title>
+    <title>Продукция — Юга</title>
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
@@ -103,82 +103,19 @@
         </form>
     </div>
     <main>
-        <div class="banner">
-            <div class="banner__inner container">
-                <h1 class="banner__title">Интернет — магазин семян сельскохозяйственных <br> растений</h1>
-                <div class="banner__btn">
-
-                    <a href="#" class="btn is--default">
-
-
-
-                        <span class="is--stroke"></span>
-                        <span class="is--label" data-text="Перейти в каталог">Перейти в каталог</span>
-
-                    </a>
-
-
-
-
-                </div>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="cards__inner container">
-                <div class="cards__list">
-                    <div class="cards__block">
-                        <div class="cards__block__inner">
-                            <div class="cards__block__icon">
-                                <span class="is--primary">
-                                    <svg class="svg-card_on-dims svg is--card_on">
-                                        <use xlink:href="img/svg/sprites.svg#card_on"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="cards__block__text">Упаковочные и сортировочные машины позволяют делать фасовку от 1 кг до 50 кг</div>
-                        </div>
-                    </div>
-                    <div class="cards__block">
-                        <div class="cards__block__inner">
-                            <div class="cards__block__icon">
-                                <span class="is--secondary">
-                                    <svg class="svg-card_tw-dims svg is--card_tw">
-                                        <use xlink:href="img/svg/sprites.svg#card_tw"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="cards__block__text">Собственная подработка семян разных сортов, а так же выводим новые сорта-аналоги иностранных</div>
-                        </div>
-                    </div>
-                    <div class="cards__block">
-                        <div class="cards__block__inner">
-                            <div class="cards__block__icon">
-                                <span class="is--primary">
-                                    <svg class="svg-card_th-dims svg is--card_th">
-                                        <use xlink:href="img/svg/sprites.svg#card_th"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="cards__block__text">Вся продукция проходит обязательную сертификацию с предоставлением сертификата</div>
-                        </div>
-                    </div>
-                    <div class="cards__block">
-                        <div class="cards__block__inner">
-                            <div class="cards__block__icon">
-                                <span class="is--secondary">
-                                    <svg class="svg-card_fo-dims svg is--card_fo">
-                                        <use xlink:href="img/svg/sprites.svg#card_fo"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="cards__block__text">Опыт работы более 10 лет позволяет нам производить качественную продукцию и давать гарантию</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__list ">
+        <div class="catalog__list is--page">
             <div class="catalog__list__inner container">
+
+                <div class="catalog__list__bradcrumbs">
+                    <div class="breadcrumbs">
+                        <ul>
+
+                            <li><a href="index.html">Главная</a></li>
+
+                            <li>Продукция</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="catalog__list__heading">
                     <div class="catalog__list__heading__left">
@@ -201,10 +138,6 @@
                                     <li><span data-sort="popular">По популярности</span></li>
                                 </ul>
                             </div>
-                        </div>
-
-                        <div class="catalog__list__heading__all">
-                            <a href="catalog.html">Посмотреть все виды</a>
                         </div>
 
                         <div class="catalog__list__heading__mobile">
@@ -521,71 +454,32 @@
                             </div>
                         </div>
 
+                        <div class="catalog__list__paginate">
+                            <div class="pagination">
+                                <div class="pagination__inner">
+                                    <ul>
+                                        <li class="is--prev is--btn">
+                                            <a href="#"><svg class="svg-dropdown-dims svg is--dropdown">
+                                                    <use xlink:href="img/svg/sprites.svg#dropdown"></use>
+                                                </svg></a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li><span>2</span></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li class="is--next is--btn">
+                                            <a href="#"><svg class="svg-dropdown-dims svg is--dropdown">
+                                                    <use xlink:href="img/svg/sprites.svg#dropdown"></use>
+                                                </svg></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="form">
-            <form class="form__inner container">
-                <div class="heading">
-                    <div class="heading__text">Задайте интересующий Вас вопрос</div>
-                    <div class="heading__sub">Менеджер свяжется с Вами в течение 30 минут</div>
-                </div>
-                <div class="form__wrap">
-                    <div class="form__block is--input">
-                        <div class="input is--icon">
-                            <input type="text" class="is--default is--sm" name="f_name" id="f_name" placeholder="Имя">
-                            <label for="f_name">
-                                <svg class="svg-user-dims svg is--user">
-                                    <use xlink:href="img/svg/sprites.svg#user"></use>
-                                </svg>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form__block is--input">
-                        <div class="input is--icon">
-                            <input type="text" class="is--default is--sm" name="f_phone" id="f_phone" placeholder="Телефон">
-                            <label for="f_phone">
-                                <svg class="svg-form_phone-dims svg is--form_phone">
-                                    <use xlink:href="img/svg/sprites.svg#form_phone"></use>
-                                </svg>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form__block is--input is--quest">
-                        <div class="input is--icon">
-                            <input type="text" class="is--default is--sm" name="f_quest" id="f_quest" placeholder="Ваш вопрос">
-                            <label for="f_quest">
-                                <svg class="svg-form_quest-dims svg is--form_quest">
-                                    <use xlink:href="img/svg/sprites.svg#form_quest"></use>
-                                </svg>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form__block is--submit">
-
-
-
-                        <button class="btn is--default" type="submit">
-
-                            <span class="is--stroke"></span>
-                            <span class="is--label" data-text="Отправить">Отправить</span>
-
-
-
-
-                        </button>
-
-                    </div>
-                </div>
-                <div class="form__data">
-                    <div class="checkbox">
-                        <input type="checkbox" name="data" id="f_data" checked required>
-                        <label for="f_data"><span></span></label>
-                    </div>
-                    <label for="f_data" class="form__data__label">Нажимая на кнопку «Отправить», Вы соглашаетесь с <a href="#">политикой конфиденциальности и обработки персональных данных</a></label>
-                </div>
-            </form>
         </div>
     </main>
     <div class="footer">

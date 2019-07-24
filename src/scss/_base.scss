@@ -13,11 +13,12 @@ body {
         }
     }
     &.is--filters {
-        .catalog-home__aside {
+        .catalog__list__aside {
             transform: none;
         }
     }
     &.is--overlay {
+        overflow: hidden;
         #overlay {
             display: block;
         }
@@ -81,6 +82,7 @@ h6 {
 
 a {
     transition: .25s all ease;
+    color: #262626;
     &:hover {
         color: $c-primary !important;
     }

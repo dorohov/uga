@@ -1,5 +1,5 @@
 {
-    "sitename": "Юга",
+    "sitename": "Юго",
     "lang": "ru",
     "phone": "+7 (4864) 72-14-47",
     "phone_link": "tel:84864721447",
@@ -10,8 +10,15 @@
     "pages": {
         "index": "index.html",
         "catalog": "catalog.html",
+        "item": "item.html",
         "delivery": "delivery.html",
         "contacts": "contacts.html",
-        "basket": "basket.html"
+        "basket": "basket.html",
+        "basket.empty": "basket_empty.html",
+        "about": "about.html",
+        "search": "search.html",
+        "search.empty": "search_empty.html",
+        "error404": "404.html",
+        "article": "article.html"
     }
 }

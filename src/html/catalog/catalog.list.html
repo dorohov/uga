@@ -1,5 +1,18 @@
-<div class="catalog__list">
+<div class="catalog__list @@if(full == 'false') {is--page}">
     <div class="catalog__list__inner container">
+        @@if(breadcrumbs == 'true') {
+            <div class="catalog__list__bradcrumbs">
+                @@include('../components/component.breadcrumbs.html', {
+                    "list": [
+                        {
+                            "title": "Главная",
+                            "url": "@@pages.index"
+                        }
+                    ],
+                    "current": "Продукция"
+                })
+            </div>
+        }
         <div class="catalog__list__heading">
             <div class="catalog__list__heading__left">
                 <div class="heading">
@@ -25,12 +38,14 @@
                         <a href="@@pages.catalog">Посмотреть все виды</a>
                     </div>
                 }
-                <div class="catalog__list__heading__mobile"></div>
+                <div class="catalog__list__heading__mobile">
+                    <span>Фильтры</span>
+                </div>
             </div>
         </div>
         <div class="catalog__list__wrap">
             @@include('catalog.list.aside.html')
-            @@include('catalog.list.main.html')
+            @@include('catalog.list.main.html', {"pagination": "@@pagination"})
         </div>
     </div>
 </div>

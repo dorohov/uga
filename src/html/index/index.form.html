@@ -1,0 +1,49 @@
+<div class="form">
+    <form class="form__inner container">
+        <div class="heading">
+            <div class="heading__text">Задайте интересующий Вас вопрос</div>
+            <div class="heading__sub">Менеджер свяжется с Вами в течение 30 минут</div>
+        </div>
+        <div class="form__wrap">
+            <div class="form__block is--input">
+                <div class="input is--icon">
+                    <input type="text" class="is--default is--sm" name="f_name" id="f_name" placeholder="Имя">
+                    <label for="f_name">
+                        @@include('../components/component.svg.html', {"name": "user"})
+                    </label>
+                </div>
+            </div>
+            <div class="form__block is--input">
+                <div class="input is--icon">
+                    <input type="text" class="is--default is--sm" name="f_phone" id="f_phone" placeholder="Телефон">
+                    <label for="f_phone">
+                        @@include('../components/component.svg.html', {"name": "form_phone"})
+                    </label>
+                </div>
+            </div>
+            <div class="form__block is--input is--quest">
+                <div class="input is--icon">
+                    <input type="text" class="is--default is--sm" name="f_quest" id="f_quest" placeholder="Ваш вопрос">
+                    <label for="f_quest">
+                        @@include('../components/component.svg.html', {"name": "form_quest"})
+                    </label>
+                </div>
+            </div>
+            <div class="form__block is--submit">
+                @@include('../components/component.button.html', {
+                    "type": "submit",
+                    "url": "#",
+                    "text": "Отправить",
+                    "style": "default"
+                })
+            </div>
+        </div>
+        <div class="form__data">
+            <div class="checkbox">
+                <input type="checkbox" name="data" id="f_data" checked required>
+                <label for="f_data"><span></span></label>
+            </div>
+            <label for="f_data" class="form__data__label">Нажимая на кнопку «Отправить», Вы соглашаетесь с <a href="#">политикой конфиденциальности и обработки персональных данных</a></label>
+        </div>
+    </form>
+</div>

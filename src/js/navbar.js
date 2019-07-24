@@ -109,5 +109,9 @@
             if(targets.length <= 0) $('.navbar__controls').removeClass('is--search')
         })
 
+        $('.catalog__list__heading__mobile span').on('click', function() {
+            toggleFilters()
+        })
+
     })
 })(jQuery);

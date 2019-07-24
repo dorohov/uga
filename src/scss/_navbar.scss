@@ -103,8 +103,7 @@
                     border-radius: 100px;
                     outline: none;
                     bottom: 0;
-                    right: 0;
-                    left: 0;
+                    right: 9px;
                     margin: 0 auto;
                     color: #fff;
                     transition: .25s all ease;
@@ -166,6 +165,7 @@
             opacity: 0;
             transition: .25s all ease;
             transform: translateX(-100%);
+            overflow: auto;
             &__inner {
                 padding: 30px 0;
             }

@@ -1,5 +1,8 @@
 @@include('index.banner.html')
 @@include('index.cards.html')
 @@include('../catalog/catalog.list.html', {
-    "full": "true"
+    "full": "true",
+    "pagination": "false",
+    "breadcrumbs": "false"
 })
+@@include('index.form.html')
