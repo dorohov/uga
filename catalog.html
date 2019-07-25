@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Продукция — Юга</title>
+    <title>Продукция — Юго</title>
+    <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
@@ -25,19 +26,19 @@
             <div class="navbar__menu">
                 <div class="navbar__menu__block">
                     <ul>
-                        <li class="is--active"><a href="#">Продукция</a></li>
+                        <li class="is--active"><a href="catalog.html">Продукция</a></li>
                         <li><a href="#">Услуги</a></li>
                     </ul>
                 </div>
                 <div class="navbar__menu__logo">
                     <a href="index.html">
-                        <img src="img/logo.png" alt="Юга">
+                        <img src="img/logo.png" alt="Юго">
                     </a>
                 </div>
                 <div class="navbar__menu__block">
                     <ul>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -74,11 +75,11 @@
     <div class="navbar__mobile__container">
         <div class="navbar__mobile__menu">
             <ul>
-                <li class="is--active"><a href="#">Продукция</a></li>
+                <li class="is--active"><a href="catalog.html">Продукция</a></li>
                 <li><a href="#">Услуги</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Корзина</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="basket.html">Корзина</a></li>
             </ul>
         </div>
         <div class="navbar__mobile__phone">
@@ -486,7 +487,7 @@
         <div class="footer__inner container">
             <div class="footer__logo">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="Юга">
+                    <img src="img/logo.png" alt="Юго">
                 </a>
             </div>
             <div class="footer__info">
@@ -532,7 +533,14 @@
     </div>
     <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/slick.min.js"></script>
+    <script src="dist/js/svg4everybody.min.js"></script>
+    <script src="dist/js/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=6fea8ff0-a1d5-4a3d-b0e7-f5a5d3f1285a&lang=ru_RU" type="text/javascript"></script>
     <script src="dist/js/main.js"></script>
+    <script>
+        svg4everybody()
+    </script>
 </body>
 
 </html>

@@ -31,7 +31,66 @@
                         @@include('../components/component.svg.html', {"name": "ruble_small"})
                     </div>
                 </div>
-                <div class="item__top__right"></div>
+                <div class="item__top__right">
+                    <div class="item__top__right__compos">
+                        <div class="item__top__right__compos__heading">Состав:</div>
+                        <ul>
+                            <li>Овсяница луговая — 45%</li>
+                            <li>Райграс пастбищный — 30%</li>
+                            <li>Тимофеевка — 25%</li>
+                        </ul>
+                    </div>
+                    <div class="item__top__right__desc">
+                        <p>Данная травосмесь с простым составом подойдет для создания укосного травостоя интенсивного типа (3-4 укоса), а также обеспечит ранне- <br> и среднеспелое вызревание травостоя.</p>
+                        <p>Данная травосмесь с простым составом подойдет для создания укосного травостоя интенсивного типа (3-4 укоса), а также обеспечит ранне- <br> и среднеспелое вызревание травостоя.</p>
+                        <p>Данная травосмесь с простым составом подойдет для создания укосного травостоя интенсивного типа (3-4 укоса), а также обеспечит ранне- <br> и среднеспелое вызревание травостоя.</p>
+                    </div>
+                    <div class="item__top__right__inst">
+                        <p>Подходит для долгосрочного и краткосрочного применения.</p>
+                        <p>Норма высева — 40-50 кг на 1 га.</p>
+                    </div>
+                    <div class="item__top__right__controls">
+                        <div class="item__top__right__controls__price">
+                            <span class="is--price">100@@include('../components/component.svg.html', {"name": "ruble"})</span>
+                            <span class="is--text">Оптовая цена</span>
+                        </div>
+                        <div class="item__top__right__controls__basket">
+                            <a href="#" class="catalog__card__basket__inner is--circle is--secondary">
+                                <div class="catalog__card__basket__icon">
+                                    @@include('../components/component.svg.html', {"name": "basket"})
+                                </div>
+                                <div class="catalog__card__basket__text">В корзину</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item__bottom">
+            <div class="heading">
+                <div class="heading__text">С этим покупают</div>
+            </div>
+            <div class="item__bottom__list">
+                @@include('catalog.card.html', {
+                    "img": "catalog1.png",
+                    "title": "Травосмесь №1 <span>(Дорожная)</span>",
+                    "price": "150"
+                })
+                @@include('catalog.card.html', {
+                    "img": "catalog2.png",
+                    "title": "Травосмесь №2 <span>(для пастбищ и сенокосов)</span>",
+                    "price": "200"
+                })
+                @@include('catalog.card.html', {
+                    "img": "catalog3.png",
+                    "title": "Травосмесь №3 <span>(для заготовки кормов)</span>",
+                    "price": "143"
+                })
+                @@include('catalog.card.html', {
+                    "img": "catalog4.png",
+                    "title": "Травосмесь №4 <span>(для заготовки кормов)</span>",
+                    "price": "155"
+                })
             </div>
         </div>
     </div>

@@ -1,0 +1,73 @@
+<div class="contacts">
+    <div class="contacts__left">
+        <div class="contacts__left__inner is--container-pl">
+            @@include('../components/component.breadcrumbs.html', {
+                "list": [
+                    {
+                        "title": "Главная",
+                        "url": "@@pages.index"
+                    }
+                ],
+                "current": "Контакты"
+            })
+            <div class="heading">
+                <div class="heading__text">Контакты</div>
+            </div>
+            <div class="contacts__adres">
+                <ul>
+                    <li>303620, Орловская область, Новодеревеньковский район, <br> п. Хомутово, ул. Строительная, 13</li>
+                    <li>303900, Орловская область, Урицкий район, <br> п. Нарышкино, Промышленный переулок, 19 А</li>
+                </ul>
+            </div>
+            <div class="contacts__links">
+                <div class="contacts__links__block is--mb">
+                    <div class="contacts__links__block__url">
+                        <a href="@@phone_link" class="contacts__links__inner is--circle is--secondary">
+                            <div class="contacts__links__icon">
+                                @@include('../components/component.svg.html', {"name": "phone"})
+                            </div>
+                            <div class="contacts__links__text">@@phone</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__links__block is--mb">
+                    <div class="contacts__links__block__url">
+                        <a href="mailto:m.ugo@yandex.ru" class="contacts__links__inner is--circle is--primary">
+                            <div class="contacts__links__icon">
+                                @@include('../components/component.svg.html', {"name": "email"})
+                            </div>
+                            <div class="contacts__links__text">m.ugo@yandex.ru</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__links__block">
+                    <div class="contacts__links__block__d">Директор</div>
+                    <div class="contacts__links__block__n">Синельников <br> Александр Алексеевич</div>
+                    <div class="contacts__links__block__url">
+                        <a href="tel:89103028502" class="contacts__links__inner is--circle is--secondary">
+                            <div class="contacts__links__icon">
+                                @@include('../components/component.svg.html', {"name": "phone"})
+                            </div>
+                            <div class="contacts__links__text">+7 910 302-85-02</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__links__block">
+                    <div class="contacts__links__block__d">Менеджеры по работе с клиентами</div>
+                    <div class="contacts__links__block__n">Митичева <br> Марина Сергеевна</div>
+                    <div class="contacts__links__block__url">
+                        <a href="tel:89803660051" class="contacts__links__inner is--circle is--primary">
+                            <div class="contacts__links__icon">
+                                @@include('../components/component.svg.html', {"name": "phone"})
+                            </div>
+                            <div class="contacts__links__text">+7 980 366 00 51</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contacts__right">
+        <div id="map"></div>
+    </div>
+</div>
