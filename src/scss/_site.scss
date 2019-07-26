@@ -739,6 +739,122 @@
     }
 }
 
+.basket {
+    padding: 50px 0 80px 0;
+    &__bg {
+        background-image: url(../../img/basket_bg.png);
+        background-repeat: no-repeat;
+        background-position: 75% bottom;
+        background-size: contain;
+    }
+    &__nbg {
+        .heading {
+            margin-bottom: 35px;
+        }
+    }
+    &__table {
+        margin-bottom: 45px;
+        table {
+            width: 100%;
+            border-spacing: 0;
+            th {
+                background: $c-primary;
+                padding: 22px 55px;
+                color: #fff;
+                text-align: left;
+                font-weight: 600;
+                font-size: 24px;
+                white-space: nowrap;
+                &:first-child {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                &:last-child {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+            td {
+                padding: 33px 55px;
+                background: #fff;
+                color: #363636;
+                font-size: 18px;
+                &:first-child {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                &:last-child {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+                .is--circle {
+                    text-align: center;
+                    display: inline-block;
+                    svg {
+                        fill: #5A5A5A;
+                    }
+                    &::after {
+                        right: 8px;
+                        bottom: 0;
+                    }
+                }
+                &.is--price {
+                    color: #363636;
+                    font-size: 24px;
+                    font-weight: bold;
+                    svg {
+                        fill: #363636;
+                        vertical-align: baseline;
+                    }
+                }
+            }
+            tr {
+                &.is--spacer {
+                    height: 5px;
+                }
+            }
+        }
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__left {
+            font-weight: 600;
+            font-size: 24px;
+            color: #363636;
+            margin: 15px 30px 15px 0;
+            span {
+                font-weight: bold;
+                svg {
+                    fill: #363636;
+                    vertical-align: baseline;
+                }
+            }
+        }
+    }
+}
+
+.error {
+    &__inner {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__left {
+        padding: 0 110px 0 70px;
+    }
+    &__right {
+        max-width: 320px;
+        .heading {
+            white-space: nowrap;
+        }
+    }
+}
+
 @media (max-width: 1440px) {
     .catalog {
         &__list {
@@ -749,6 +865,19 @@
             }
             &__main {
                 max-width: 1030px;
+            }
+        }
+    }
+    .basket {
+        &__table {
+            table {
+                tr {
+                    th,
+                    td {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
+                }
             }
         }
     }
@@ -790,6 +919,25 @@
         }
         &__right {
             width: 40%;
+        }
+    }
+    .basket {
+        &__bg {
+            background: none;
+        }
+        &__table {
+            table {
+                tr {
+                    th {
+                        font-size: 20px;
+                    }
+                    th,
+                    td {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
         }
     }
 }
@@ -964,6 +1112,11 @@
     .art {
         padding-bottom: 50px;
     }
+    .error {
+        &__left {
+            padding: 0 40px 0 0px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -1117,6 +1270,43 @@
             }
         }
     }
+    .basket {
+        &__table {
+            table {
+                thead {
+                    display: none;
+                }
+                .is--spacer {
+                    padding: 0 !important;
+                    &:first-child {
+                        display: none;
+                    }
+                }
+                tr, td {
+                    display: block;
+                }
+                td {
+                    padding: 10px 15px !important;
+                    &:first-child {
+                        padding-top: 20px !important    ;
+                    }
+                    &:last-child {
+                        padding-bottom: 20px !important ;
+                    }
+                    &.is--m {
+                        &::before {
+                            content: attr(data-title);
+                            display: block;
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                            color: $c-primary;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 650px) {
@@ -1130,6 +1320,24 @@
             &__list {
                 .catalog__card {
                     max-width: 100%;
+                }
+            }
+        }
+    }
+    .error {
+        &__inner {
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        &__left {
+            padding: 0 5vw;
+            margin-bottom: 30px;
+        }
+        &__right {
+            .heading {
+                white-space: normal;
+                br {
+                    display: none;
                 }
             }
         }

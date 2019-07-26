@@ -1,0 +1,47 @@
+<div class="basket">
+    <div class="basket__inner container">
+        @@include('../components/component.breadcrumbs.html', {
+            "list": [
+                {
+                    "title": "Главная",
+                    "url": "@@pages.index"
+                }
+            ],
+            "current": "Корзина"
+        })
+        <div class="heading">
+            <div class="heading__text">Корзина</div>
+        </div>
+        <div class="basket__table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Название</th>
+                        <th>Фасовка</th>
+                        <th>Количество</th>
+                        <th>Цена, шт</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @@include('basket.table.tr.html')
+                    @@include('basket.table.tr.html')
+                    @@include('basket.table.tr.html')
+                    @@include('basket.table.tr.html')
+                </tbody>
+            </table>
+        </div>
+        <div class="basket__footer">
+            <div class="basket__footer__left">Итого: <span>300@@include('../components/component.svg.html', {"name": "ruble"})</span></div>
+            <div class="basket__footer__right">
+                @@include('../components/component.button.html', {
+                    "type": "link",
+                    "url": "@@pages.catalog",
+                    "text": "Очистить корзину",
+                    "style": "default"
+                })
+            </div>
+        </div>
+    </div>
+</div>

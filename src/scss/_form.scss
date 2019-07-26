@@ -65,6 +65,7 @@
         padding: 0 15px;
         max-width: 25%;
         width: 100%;
+        position: relative;
         .input {
             height: 100%;
             input {
@@ -81,12 +82,38 @@
         }
     }
     &__data {
+        position: relative;
         &__label {
             margin-left: 10px;
             font-weight: 300;
             font-size: 18px;
             line-height: 85.4%;
         }
+    }
+}
+
+.parsley-errors-list.filled {
+    position: absolute;
+    color: #fff;
+    background: $c-secondary;
+    left: 0;
+    top: calc(100% + 10px);
+    padding: 5px 10px;
+    border-radius: 3px;
+    z-index: 10;
+    &::after {
+        bottom: 100%;
+        left: 10px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba($c-secondary, 0);
+        border-bottom-color: $c-secondary;
+        border-width: 5px;
+        margin-left: -5px;
     }
 }
 

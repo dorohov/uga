@@ -109,7 +109,7 @@
                 <h1 class="banner__title">Интернет — магазин семян сельскохозяйственных <br> растений</h1>
                 <div class="banner__btn">
 
-                    <a href="#" class="btn is--default">
+                    <a href="catalog.html" class="btn is--default">
 
 
 
@@ -535,7 +535,7 @@
                 <div class="form__wrap">
                     <div class="form__block is--input">
                         <div class="input is--icon">
-                            <input type="text" class="is--default is--sm" name="f_name" id="f_name" placeholder="Имя">
+                            <input type="text" class="is--default is--sm" name="f_name" id="f_name" placeholder="Имя" required>
                             <label for="f_name">
                                 <svg class="svg-user-dims svg is--user">
                                     <use xlink:href="img/svg/sprites.svg#user"></use>
@@ -545,7 +545,7 @@
                     </div>
                     <div class="form__block is--input">
                         <div class="input is--icon">
-                            <input type="text" class="is--default is--sm" name="f_phone" id="f_phone" placeholder="Телефон">
+                            <input type="text" class="is--default is--sm" name="f_phone" id="f_phone" placeholder="Телефон" required>
                             <label for="f_phone">
                                 <svg class="svg-form_phone-dims svg is--form_phone">
                                     <use xlink:href="img/svg/sprites.svg#form_phone"></use>
@@ -555,7 +555,7 @@
                     </div>
                     <div class="form__block is--input is--quest">
                         <div class="input is--icon">
-                            <input type="text" class="is--default is--sm" name="f_quest" id="f_quest" placeholder="Ваш вопрос">
+                            <input type="text" class="is--default is--sm" name="f_quest" id="f_quest" placeholder="Ваш вопрос" required>
                             <label for="f_quest">
                                 <svg class="svg-form_quest-dims svg is--form_quest">
                                     <use xlink:href="img/svg/sprites.svg#form_quest"></use>
@@ -584,7 +584,7 @@
                         <input type="checkbox" name="data" id="f_data" checked required>
                         <label for="f_data"><span></span></label>
                     </div>
-                    <label for="f_data" class="form__data__label">Нажимая на кнопку «Отправить», Вы соглашаетесь с <a href="#">политикой конфиденциальности и обработки персональных данных</a></label>
+                    <label for="f_data" class="form__data__label">Нажимая на кнопку «Отправить», Вы соглашаетесь с <a href="article.html">политикой конфиденциальности и обработки персональных данных</a></label>
                 </div>
             </form>
         </div>
@@ -637,13 +637,22 @@
             </div>
         </div>
     </div>
+    <div id="modal-form" class="modal">
+        <div class="modal__inner">
+            <div class="modal__heading">Ваше сообщение отправлено!</div>
+            <div class="modal__text">Менеджер свяжется с Вами <br> в течение 30 минут</div>
+            <div class="modal__btn">
+                <a href="#" rel="modal:close" class="btn is--default">
+                    <span class="is--stroke"></span>
+                    <span class="is--label" data-text="Закрыть">Закрыть</span>
+                </a>
+            </div>
+        </div>
+    </div>
     <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/slick.min.js"></script>
-    <script src="dist/js/svg4everybody.min.js"></script>
-    <script src="dist/js/jquery.fancybox.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=6fea8ff0-a1d5-4a3d-b0e7-f5a5d3f1285a&lang=ru_RU" type="text/javascript"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="dist/js/bundle-min.js"></script>
     <script>
         svg4everybody()
     </script>

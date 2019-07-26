@@ -1,0 +1,19 @@
+<div class="error">
+    <div class="error__inner container">
+        <div class="error__left">
+            <img src="img/404.svg" alt="404">
+        </div>
+        <div class="error__right">
+            <div class="heading">
+                <div class="heading__text">Страница <br> не найдена!</div>
+                <div class="heading__sub">Данная страница удалена или никогда <br> не существовала</div>
+            </div>
+            @@include('../components/component.button.html', {
+                "type": "link",
+                "url": "@@pages.index",
+                "text": "На главную",
+                "style": "default"
+            })
+        </div>
+    </div>
+</div>

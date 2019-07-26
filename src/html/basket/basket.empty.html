@@ -1,0 +1,25 @@
+<div class="basket">
+    <div class="basket__inner container">
+        @@include('../components/component.breadcrumbs.html', {
+            "list": [
+                {
+                    "title": "Главная",
+                    "url": "@@pages.index"
+                }
+            ],
+            "current": "Корзина"
+        })
+        <div class="heading">
+            <div class="heading__text">Корзина</div>
+            <div class="heading__sub">Ваша корзина пока пуста. Перейдите в раздел «Каталог», <br> чтобы выбрать товар и сделать заказ</div>
+        </div>
+        <div class="basket__btn">
+            @@include('../components/component.button.html', {
+                "type": "link",
+                "url": "@@pages.catalog",
+                "text": "Перейти в каталог",
+                "style": "default"
+            })
+        </div>
+    </div>
+</div>

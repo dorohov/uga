@@ -1,0 +1,46 @@
+// .table {
+//     &__row {
+//         display: flex;
+//     }
+//     &__col {
+//         padding-left: 55px;
+//         padding-right: 55px;
+//         width: 100%;
+//         &.is--basket {
+//             &-on {
+//                 width: 10%;
+//             }
+//             &-tw {
+//                 min-width: 340px;
+//             }
+//             &-th {
+//                 width: 10%;
+//             }
+//             &-fo {
+//                 width: 20%;
+//             }
+//             &-fv {
+//                 width: 15%;
+//             }
+//             &-sx {
+//                 width: 15%;
+//             }
+//         }
+//     }
+//     &__head {
+//         .table {
+//             &__col {
+//                 padding-top: 22px;
+//                 padding-bottom: 22px;
+//             }
+//         }
+//     }
+//     &__body {
+//         .table {
+//             &__col {
+//                 padding-top: 33px;
+//                 padding-bottom: 33px;
+//             }
+//         }
+//     }
+// }
