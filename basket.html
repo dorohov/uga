@@ -289,19 +289,10 @@
                                 <use xlink:href="img/svg/sprites.svg#ruble"></use>
                             </svg></span></div>
                     <div class="basket__footer__right">
-
-                        <a href="catalog.html" class="btn is--default">
-
-
-
+                        <button class="btn is--inv is--form-basket" type="button">
                             <span class="is--stroke"></span>
                             <span class="is--label" data-text="Оформить заказ">Оформить заказ</span>
-
-                        </a>
-
-
-
-
+                        </button>
 
                         <a href="catalog.html" class="btn is--default">
 
@@ -318,6 +309,68 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="form is--basket">
+            <form class="form__inner container">
+                <div class="heading">
+                    <div class="heading__text">Оформить заявку</div>
+                    <div class="heading__sub">Менеджер свяжется с Вами в течение 30 минут</div>
+                </div>
+                <div class="form__wrap">
+                    <div class="form__block is--input">
+                        <div class="input is--icon">
+                            <input type="text" class="is--default is--sm" name="f_name" id="f_name" placeholder="Имя" required>
+                            <label for="f_name">
+                                <svg class="svg-user-dims svg is--user">
+                                    <use xlink:href="img/svg/sprites.svg#user"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__block is--input">
+                        <div class="input is--icon">
+                            <input type="text" class="is--default is--sm" name="f_phone" id="f_phone" placeholder="Телефон" required>
+                            <label for="f_phone">
+                                <svg class="svg-form_phone-dims svg is--form_phone">
+                                    <use xlink:href="img/svg/sprites.svg#form_phone"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__block is--input is--quest">
+                        <div class="input is--icon">
+                            <input type="email" class="is--default is--sm" name="f_quest" id="f_quest" placeholder="Ваша почта" required>
+                            <label for="f_quest">
+                                <svg class="svg-form_email-dims svg is--form_email">
+                                    <use xlink:href="img/svg/sprites.svg#form_email"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__block is--submit">
+
+
+
+                        <button class="btn is--default" type="submit">
+
+                            <span class="is--stroke"></span>
+                            <span class="is--label" data-text="Отправить">Отправить</span>
+
+
+
+
+                        </button>
+
+                    </div>
+                </div>
+                <div class="form__data">
+                    <div class="checkbox">
+                        <input type="checkbox" name="data" id="f_data" checked required>
+                        <label for="f_data"><span></span></label>
+                    </div>
+                    <label for="f_data" class="form__data__label">Нажимая на кнопку «Отправить», Вы соглашаетесь с <a href="article.html">политикой конфиденциальности и обработки персональных данных</a></label>
+                </div>
+            </form>
         </div>
     </main>
     <div class="footer">

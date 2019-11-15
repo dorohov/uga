@@ -110,6 +110,20 @@
             }
         }
     }
+    &.is--inv {
+        color: #fff;
+        span {
+            &.is--label {
+                background: $c-primary;
+                &::after {
+                    color: $c-primary;
+                }
+            }
+            &.is--stroke {
+                border-color: $c-primary;
+            }
+        }
+    }
 }
 
 .heading {

@@ -35,12 +35,10 @@
         <div class="basket__footer">
             <div class="basket__footer__left">Итого: <span>300@@include('../components/component.svg.html', {"name": "ruble"})</span></div>
             <div class="basket__footer__right">
-                @@include('../components/component.button.html', {
-                    "type": "link",
-                    "url": "@@pages.catalog",
-                    "text": "Оформить заказ",
-                    "style": "default"
-                })
+                <button class="btn is--inv is--form-basket" type="button">
+                    <span class="is--stroke"></span>
+                    <span class="is--label" data-text="Оформить заказ">Оформить заказ</span>
+                </button>
                 @@include('../components/component.button.html', {
                     "type": "link",
                     "url": "@@pages.catalog",
@@ -50,4 +48,53 @@
             </div>
         </div>
     </div>
+</div>
+<div class="form is--basket">
+    <form class="form__inner container">
+        <div class="heading">
+            <div class="heading__text">Оформить заявку</div>
+            <div class="heading__sub">Менеджер свяжется с Вами в течение 30 минут</div>
+        </div>
+        <div class="form__wrap">
+            <div class="form__block is--input">
+                <div class="input is--icon">
+                    <input type="text" class="is--default is--sm" name="f_name" id="f_name" placeholder="Имя" required>
+                    <label for="f_name">
+                        @@include('../components/component.svg.html', {"name": "user"})
+                    </label>
+                </div>
+            </div>
+            <div class="form__block is--input">
+                <div class="input is--icon">
+                    <input type="text" class="is--default is--sm" name="f_phone" id="f_phone" placeholder="Телефон" required>
+                    <label for="f_phone">
+                        @@include('../components/component.svg.html', {"name": "form_phone"})
+                    </label>
+                </div>
+            </div>
+            <div class="form__block is--input is--quest">
+                <div class="input is--icon">
+                    <input type="email" class="is--default is--sm" name="f_quest" id="f_quest" placeholder="Ваша почта" required>
+                    <label for="f_quest">
+                        @@include('../components/component.svg.html', {"name": "form_email"})
+                    </label>
+                </div>
+            </div>
+            <div class="form__block is--submit">
+                @@include('../components/component.button.html', {
+                    "type": "submit",
+                    "url": "#",
+                    "text": "Отправить",
+                    "style": "default"
+                })
+            </div>
+        </div>
+        <div class="form__data">
+            <div class="checkbox">
+                <input type="checkbox" name="data" id="f_data" checked required>
+                <label for="f_data"><span></span></label>
+            </div>
+            <label for="f_data" class="form__data__label">Нажимая на кнопку «Отправить», Вы соглашаетесь с <a href="@@pages.article">политикой конфиденциальности и обработки персональных данных</a></label>
+        </div>
+    </form>
 </div>

@@ -42,5 +42,11 @@
 
         $('form').parsley()
 
+        $('.form.is--basket').hide()
+
+        $('.btn.is--form-basket').on('click', function() {
+            $('.form.is--basket').slideToggle()
+        })
+
     })
 })(jQuery);
