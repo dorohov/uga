@@ -83,6 +83,12 @@
         svg {
             fill: #5A5A5A;
         }
+        &__cart {
+            .is--circle::after {
+                left: -4px !important;
+                top: 14px !important;
+            }
+        }
         &__search {
             margin-left: 40px;
             position: relative;

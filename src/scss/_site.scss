@@ -1,8 +1,3 @@
-/**
-*   Валидация формы
-*   Модалки
-*/
-
 .banner {
     background-image: url(../../img/banner.jpg);
     background-size: cover;
@@ -1271,6 +1266,13 @@
         }
     }
     .basket {
+        &__footer {
+            &__right {
+                .btn {
+                    margin: 5px 0;
+                }
+            }
+        }
         &__table {
             table {
                 thead {
