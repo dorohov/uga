@@ -11,7 +11,7 @@
             open: 'is--open'
         }
 
-        $(__items.list).hide()
+        // $(__items.list).hide()
 
         $(__items.item).on('click', function() {
             var _this = $(this)
