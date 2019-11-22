@@ -172,6 +172,7 @@
             transition: .25s all ease;
             transform: translateX(-100%);
             overflow: auto;
+            display: none;
             &__inner {
                 padding: 30px 0;
             }
@@ -236,6 +237,9 @@
         }
         &__mobile {
             display: block;
+            &__container {
+                display: block;
+            }
         }
     }
 }

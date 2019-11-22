@@ -48,5 +48,16 @@
             $('.form.is--basket').slideToggle()
         })
 
+        var phoneInputs = document.querySelectorAll('[name="f_phone"]');
+
+        if(phoneInputs.length) {
+            for(var i = 0; i < phoneInputs.length; i++) {
+                new IMask(
+                    phoneInputs[i], {
+                    mask: '+{7}(900)000-00-00'
+                });
+            }
+        }
+
     })
 })(jQuery);
