@@ -25,7 +25,6 @@
         $('.dropdown-block ul li span').on('click', function() {
             var thisTarget = $(this).data('sort')
             closeDropdown()
-            alert('Сортировка по ' + thisTarget)
         })
 
     })
