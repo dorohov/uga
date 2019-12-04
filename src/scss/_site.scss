@@ -408,6 +408,25 @@
                         margin-bottom: 0;
                     }
                 }
+                .read-next {
+                    font-weight: bold;
+                    display: none;
+                }
+                &.is--long {
+                    .item__top__right__desc__inner {
+                        p {
+                            display: none;
+                            &:nth-child(1),
+                            &:nth-child(2),
+                            &:nth-child(3) {
+                                display: block;
+                            }
+                        }
+                    }
+                    .read-next {
+                        display: inline-block;
+                    }
+                }
             }
             &__inst {
                 margin-bottom: 70px;

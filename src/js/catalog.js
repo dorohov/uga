@@ -22,6 +22,14 @@
             $(__items.list).not(_thisList).slideUp()
         })
 
+        if($('.item__top__right__desc').innerHeight() > 150) {
+            $('.item__top__right__desc').addClass('is--long')
+        }
+
+        $('.item__top__right__desc .read-next').on('click', function(e) {
+            e.preventDefault();
+            $('.item__top__right__desc').removeClass('is--long')
+        })
 
     })
 })(jQuery);
